@@ -15,6 +15,7 @@
 }
 
 
+
 body 
 {	
         width:72vw;
@@ -24,32 +25,53 @@ body
         
 }
 
+.gallery {
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center; /* Centres the pairs neatly on the page */
+    gap:2.5vw;              /* Creates even horizontal and vertical spacing between all 20 cards */
+    max-width:1100px;       /* Keeps the two columns from stretching too wide on huge monitors */
+    margin:2vw auto;        /* Centres the entire gallery container on the page */
+}
 
 .photobox 
-{       
-        width:28vw;
-        float:left;
-        height:18vw;
-        margin-left:4vw;
-        margin-top:2vw;
-        margin-bottom:1vw; 
-        padding:1vw 1vw 1vw 1vw;         
+{
+    width:36%;              /* Forces exactly 2 cards per row on desktop & tablet */
+    min-width:200px;        /* Stacks into 1 clean column on narrow phone screens */
+    display:block;
+    text-decoration:none;
+    box-sizing:border-box;
 }
 
-.tmb
+.photobox img 
 {
-    width:26vw;
+    width:100%;
     height:auto;
-    float:left;
-    padding:0.5vw 0.5vw 0.5vw 0.5vw;
-    margin-bottom:0.5vw;
-    box-shadow:0.1vw 0.1vw 0.5vw 0.5vw rgba(07,07,07,0.2);
+    display:block;
     border-radius:1vw;
+    box-shadow:0.1vw 0.1vw 0.5vw 0.5vw rgba(7, 7, 7, 0.2);
+    transition:filter 0.25s ease, transform 0.25s ease; /* Smooth 0.25s fade in and out */
 }
+
+.photobox:hover img {
+    filter:brightness(1.12);   /* Gently brightens the photo by 12% */
+    transform:translateY(-2px); /* Optional: lifts the photo by a tiny 2 pixels */
+}
+
+.tmb 
+{
+    width:100%;
+    padding:0.1vw 0 0 0; /* Adds a small gap between the photo and the text */
+    box-sizing:border-box;
+    border:none;
+    box-shadow:none;
+    background:transparent;
+}
+
 
 hr 
 {
-        height: 0.1vw;
+        height:0.1vw;
         width:54vw;
         background-image:linear-gradient(to right,rgba(230,230,255,0),rgba(230,230,255,0.6),rgba(230,230,255,0));
         border: none;
@@ -58,106 +80,82 @@ hr
 
 .footer 
 {
-        width:36vw;
+        width:72vw;
         float:left;
         height:auto;
-        margin-left:18vw;
         margin-top:0.5vw;
         margin-bottom:1vw;
         padding:1vw 0vw 2vw 0vw;
         font-family:calibri,arial,sans-serif;
         text-shadow: 0.2vw 0.2vw 0.2vw rgba(9, 9, 9, 0.5);
         color:rgba(230, 230, 255, 0.9);
-        font-size:1.2vw;
-
+        font-size:calc (0.9em + 0.5vw);
         text-align:center; 
         border-radius:1vw;   
 }
 
-
-
-
-
-.footer2 
+p 
 {
-        width:26vw;
-        float:left;
-        height:auto;
-        margin-left:23;
-        margin-top:1vw;
-        margin-bottom:1vw;
-        font-family:calibri,arial,sans-serif;
-        text-shadow: 0.2vw 0.2vw 0.2vw rgba(9,9,9, 0.5);
-        color:rgba(230, 230, 255, 0.9);
-        font-size:1.5vw;
-        font-weight:400;
-        text-align:center; 
-        border-radius:1vw;   
-}
-
-
-
-
-
-
-
-p {
         font-family: calibri, arial, sans-serif; font-style:italic ;
-        font-size:calc(9px + 0.6vw);
-        padding:0vw 15vw 0vw 15vw;
+        font-size:calc(0.65em + 0.5vw);
+        padding:0vw 12vw 0vw 12vw;
         text-shadow: 0.1vw 0.1vw 0.1vw rgba(9,9,9, 0.5);
         color:rgba(230, 230, 255, 0.9);
         text-align:justify;   
 }
 
-p.cen2{
+p.cen2
+{
         font-family: calibri, arial, sans-serif; font-style:italic;
-        font-size:calc (9px + 0.6vw);
+        font-size:calc(0.65em + 0.5vw);
         padding:0vw 0vw 0vw 0vw;
         text-shadow: 0.1vw 0.1vw 0.1vw rgba(9,9,9, 0.5);
         color:rgba(230, 230, 255, 0.9);
         text-align:center;        	
 }
 
-
-
-p.cen3{
+p.cen3
+{
         font-family: calibri, arial, sans-serif;
-        font-size:1.4vw;
+        font-size:calc(0.65em + 0.5vw);
         padding:0vw 0vw 0vw 0vw;
         text-shadow: 0.1vw 0.1vw 0.1vw rgba(9,9,9, 0.5);
         color:rgba(230, 230, 255, 0.9);
         text-align:center;        	
 }
 
-
-
-h1  {
+h1  
+{
         font-family: Demo_ConeriaScript_Slanted,calibri,arial, sans-serif;
-        font-size: 3vw;
+        font-size:calc(2.5em + 0.5vw);
         text-shadow: 0.2vw 0.2vw 0.2vw rgba(9,9,9, 0.5);
         font-weight: 200;
         color:rgba(230, 230, 255, 0.9);
         text-align:center;
 }
 
-h2  {
+h2  
+{
         font-family: calibri,arial, sans-serif;
-        font-size: 1.5vw; 
+        font-size:calc(1em + 0.5vw); 
         text-shadow: 0.1vw 0.1vw 0.1vw rgba(9,9,9, 0.5);
         font-weight: 400;
         color:rgba(230, 230, 255, 0.9);
         text-align:center;
 }
 
-h3  {
-        font-family: calibri,arial, sans-serif;
-        font-size:1.2vw;font-style:italic;
-        text-shadow: 0.15vw 0.15vw 0.15vw rgba(9,9,9, 0.6);
-        font-weight: 400;
-        color:rgba(230, 230, 255, 0.9);
-        text-align:center;
+#@media screen and (max-width: 600px) {
+    body {
+        width: 92vw;
+    }
+
+    .photobox {
+        width: 85%; /* Forces a clean single column of large thumbnails on phones */
+    }
 }
+
+
+
 
 
 
