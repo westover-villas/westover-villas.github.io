@@ -71,9 +71,9 @@ body
 
 hr 
 {
-        height:0.1vw;
-        width:54vw;
-        background-image:linear-gradient(to right,rgba(230,230,255,0),rgba(230,230,255,0.6),rgba(230,230,255,0));
+        height:1px;
+        width:45vw;
+        background-image:linear-gradient(to right,rgba(230,230,255,0),rgba(230,230,255,0.8),rgba(230,230,255,0));
         border: none;
 }
 
