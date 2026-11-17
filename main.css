@@ -78,21 +78,6 @@ hr
 }
 
 
-.footer 
-{
-        width:72vw;
-        float:left;
-        height:auto;
-        margin-top:0.5vw;
-        margin-bottom:1vw;
-        padding:1vw 0vw 2vw 0vw;
-        font-family:calibri,arial,sans-serif;
-        text-shadow: 0.2vw 0.2vw 0.2vw rgba(9, 9, 9, 0.5);
-        color:rgba(230, 230, 255, 0.9);
-        font-size:calc (0.9em + 0.5vw);
-        text-align:center; 
-        border-radius:1vw;   
-}
 
 p 
 {
@@ -127,7 +112,7 @@ p.cen3
 h1  
 {
         font-family: Demo_ConeriaScript_Slanted,calibri,arial, sans-serif;
-        font-size:calc(2.5em + 0.5vw);
+        font-size:calc(2em + 0.5vw);
         text-shadow: 0.2vw 0.2vw 0.2vw rgba(9,9,9, 0.5);
         font-weight: 200;
         color:rgba(230, 230, 255, 0.9);
@@ -143,6 +128,24 @@ h2
         color:rgba(230, 230, 255, 0.9);
         text-align:center;
 }
+
+
+.footer 
+{
+        width:72vw;
+        float:left;
+        height:auto;
+        margin-top:0.5vw;
+        margin-bottom:1vw;
+        padding:1vw 0vw 2vw 0vw;
+        font-family:calibri,arial,sans-serif;
+        text-shadow: 0.2vw 0.2vw 0.2vw rgba(9, 9, 9, 0.5);
+        color:rgba(230, 230, 255, 0.9);
+        font-size:calc(0.8em + 0.5vw);
+        text-align:center; 
+          
+}
+
 
 #@media screen and (max-width: 600px) {
     body {
